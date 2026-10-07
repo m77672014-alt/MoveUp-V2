@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>MoveUp-DashBoard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <header>
+            <h1>MoveUp</h1>
+            <nav>
+                <a href="#">Initiation</a>
+                <a href="#">Missions</a>
+                <a href="#">Help</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Move your body, Improve your mind</h2>
+                <p>A plataform to encourage the Youth to practice physic exercises and take care of their mental health</p>
+                <button>See Missions</button>
+            </section>
+
+            <section>
+                <h2>Weekly Missions</h2>
+                <div class="missions">
+                    <div class="mission-card">
+                        <div class="mission-icon">🚶</div>
+                        <h3>15-minute walk</h3>
+                        <p>Go for a 15 minutes walk.</p>
+                        <span class="mission-xp"> +20 XP</span>
+                        <button id="mission1">Complete Mission</button>
+                    </div>
+
+                    <div class="mission-card">
+                        <div class="mission-icon">💧</div>
+                        <h3>Drink 2 liters of water</h3>
+                        <p>Stay hydrated throughout the day.</p>
+                        <span class="mission-xp"> +20 XP</span>
+                        <button id="mission2">Complete Mission</button>
+                    </div>
+
+                    <div class="mission-card">
+                        <div class="mission-icon">📝</div>
+                        <h3>Write something positive about your day</h3>
+                        <p>Reflect on the good things that happened today.</p>
+                        <span class="mission-xp"> +20 XP</span>
+                        <button id="mission3">Complete Mission</button>
+                    </div>
+                </div>
+            
+            </section>
+            
+            <section class="progress-section">
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <div>
+                            <span class="progress-label">YOUR PROGRESS!</span>
+                            <h2>Level <span id="level">1</span></h2>
+                        </div>
+                        <div class="xp-number">
+                            <span id="xp">0</span> /
+                            <span id="maxXp">100</span> XP
+
+                        </div>
+                    </div>
+                    <progress id="xpBar" value="0" max="100"></progress>
+                    <p class="xp-message">
+                        <span id="xpRemaining">100</span> XP until Level 2
+                    </p>
+                </div>
+            </section>
+        </main>
+    <footer>
+        <p>Made by Murilo Camargo Pacheco - 2026</p>
+    </footer>
+    </body>
+</html>
